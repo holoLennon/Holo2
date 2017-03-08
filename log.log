@@ -1143,3 +1143,95 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 2017-03-08 11:30:29.465  INFO 24864 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
 2017-03-08 11:30:29.466  INFO 24864 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: user
 2017-03-08 11:30:30.438  WARN 24864 --- [main] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2017-03-08 16:03:14.665 ERROR 18700 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2017-03-08 16:03:15.009  INFO 18700 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-08 16:03:15.138  INFO 18700 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-08 16:03:15.139  INFO 18700 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-08 16:03:15.141  INFO 18700 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-08 16:03:15.179  INFO 18700 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-08 16:03:15.372  INFO 18700 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-08 16:03:15.760  INFO 18700 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-03-08 16:03:16.596  WARN 18700 --- [main] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
+2017-03-08 16:03:17.054 ERROR 18700 --- [main] o.a.coyote.http11.Http11NioProtocol      : Failed to start end point associated with ProtocolHandler [http-nio-80]
+
+java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) [tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.holo.App.main(App.java:32) [classes/:na]
+
+2017-03-08 16:03:17.055 ERROR 18700 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-80]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:233) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:178) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:544) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:761) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:371) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-1.4.1.RELEASE.jar:1.4.1.RELEASE]
+	at com.holo.App.main(App.java:32) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:976) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 11 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[na:1.8.0_121]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[na:1.8.0_121]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_121]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:228) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:874) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:590) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:969) ~[tomcat-embed-core-8.5.5.jar:8.5.5]
+	... 12 common frames omitted
+
+2017-03-08 16:03:17.073 ERROR 18700 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 80 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 80, or configure this application to listen on another port.
+
+2017-03-08 16:03:28.379 ERROR 19460 --- [main] com.alibaba.druid.pool.DruidDataSource   : testWhileIdle is true, validationQuery not set
+2017-03-08 16:03:28.695  INFO 19460 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2017-03-08 16:03:28.848  INFO 19460 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.11.Final}
+2017-03-08 16:03:28.849  INFO 19460 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2017-03-08 16:03:28.850  INFO 19460 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2017-03-08 16:03:28.883  INFO 19460 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-03-08 16:03:29.051  INFO 19460 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-03-08 16:03:29.436  INFO 19460 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2017-03-08 16:03:30.304  WARN 19460 --- [main] .b.a.g.t.GroovyTemplateAutoConfiguration : Cannot find template location: classpath:/templates/ (please add some templates, check your Groovy configuration, or set spring.groovy.template.check-template-location=false)
