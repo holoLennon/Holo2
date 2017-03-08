@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<meta charset="UTF-8"> 
+<body>
+
+		<div title="请输入登录名密码" style="overflow: hidden; padding: 10px;">
+			<form method="post" action="login">
+				<table class="table table-hover table-condensed">
+					<tr>
+						<th>登录名</th>
+						<td><input name="username" type="text" placeholder="请输入登录名" class="easyui-validatebox" data-options="required:true" value="${user.username}"></td>
+					</tr>
+					<tr>
+						<th>密码</th>
+						<td><input name="password" type="password" placeholder="请输入密码" class="easyui-validatebox" data-options="required:true" value=""></td>
+					</tr>
+					<tr>
+						<th>验证码</th>
+						<td><input name="captcha" type="text"  placeholder="验证码" class="easyui-validatebox" data-options="required:true"  size="4"/>
+						<br/><img id="imgcaptcha" name="imgcaptcha" src="${base}/captcha.html" onclick="this.src='${base}/	" width="100" height="35"/>点击图换一个</td>
+					</tr>	
+				</table>
+			</form>
+
+</div>
+</body>
+</html>
