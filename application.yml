@@ -12,7 +12,7 @@ prop:
     #/**是否是大御医*/
     isYjtcm: false  
     #/**是否运行微信监听服务端，开发测试环境下不监听微信 true/false/test/dbdb */  
-    isRunWxServer: false
+    isRunWxServer: false1
     #/**是否运行定时任务，多应用中，只有一台运行定时任务*/
     task: true
     #/**网站域名 ex.http://www.xxx.com */
@@ -42,7 +42,7 @@ prop:
     #/**默认的管理员密码*/
     adminpwd: admin123
     #file:///d:/opt/yjb 
-    hddir: file:///d:/opt/yjb
+    hddir: file:///d:/javawork/holo2/src/main/webapp
 #配置之prop.alipay
   alipay: 
   #/**开放平台应用的APPID，详见创建应用并获取APPID*/
@@ -79,7 +79,7 @@ spring:
   profiles:
     active: deveclipse
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/yijian3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/yijian1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
     password: holo123
     driver-class-name: com.mysql.jdbc.Driver
