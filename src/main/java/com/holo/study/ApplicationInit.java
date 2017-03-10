@@ -7,6 +7,8 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 
+import com.holo.controller.InitController;
+
 import freemarker.template.Configuration;
 public class ApplicationInit implements ApplicationListener<ContextRefreshedEvent> {
 	/**日志实例*/

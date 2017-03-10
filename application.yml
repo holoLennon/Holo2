@@ -79,7 +79,7 @@ spring:
   profiles:
     active: deveclipse
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/yijian1?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://127.0.0.1:3306/yijian3?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
     username: root
     password: holo123
     driver-class-name: com.mysql.jdbc.Driver

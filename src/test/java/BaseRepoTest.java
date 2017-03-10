@@ -11,9 +11,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.holo.App;
-import com.holo.study.Admin;
-import com.holo.study.BaseRepo;
-import com.holo.study.SqlUtils;
+import com.holo.common.bean.Admin;
+import com.holo.common.util.SqlUtils;
+import com.holo.dao.base.BaseRepo;
 
 
 

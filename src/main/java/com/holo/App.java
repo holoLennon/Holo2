@@ -38,7 +38,7 @@ public class App {
     	springApplication.run(args);
     }
     
-    
+    		
     //Hibernate 初始化 
     @Bean
     public HibernateJpaSessionFactoryBean sessionFactory(){
@@ -49,7 +49,7 @@ public class App {
     @RequestMapping(value="/",method=RequestMethod.GET)
 	public String index() {
     	System.err.println(12);
-    	return "/web/index";
+    	return "/web/index2";
 	}
 }
- 	
+ 		

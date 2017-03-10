@@ -11,7 +11,9 @@
         <link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:300,300italic,400">  <!-- Google web font "Open Sans" -->
         <link rel="stylesheet" href="${res}/css/bootstrap.min.css">                                                <!-- Bootstrap style -->
         <link rel="stylesheet" href="${res}/css/flexslider.css">                                                   <!-- Flexslider style -->       
-        <link rel="stylesheet" href="${res}/css/templatemo-style.css">                                             <!-- Templatemo style -->
+        <link rel="stylesheet" href="${res}/css/templatemo-style.css">    
+        
+        <link rel="stylesheet" href="${res}/css/index.css">                                         <!-- Templatemo style -->
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,7 +97,7 @@
                                     <p>I'm son of the rage and love
                                     </p>
                       				 <!-- <a href="${base}/pub/reg2.html"> 注册</a> -->
-                      				 <a>  注册</a> 
+                      				 <a href="javascript:openLogin();">登录</a>
                                 </div>            
 
                             </section> <!-- #about -->
@@ -206,6 +208,29 @@
         <div id="preloader">
             <div id="status">&nbsp;</div>
         </div><!-- /#preloader -->      
+        
+        <div id="login_info"class="m-layer" style="top: 41px; left: 626px;display:none;">
+		<div class="zbar" id="auto-id-qlKM8hSlso4azqLH">
+			<div class="zttl">登录</div>
+		</div>
+			<div class="zcnt">
+				<div class="lyct lyct-1" id="auto-id-9uQLVaDpg5qlDoQF">
+					<div class="n-log2 n-log2-1 f-cb">
+						<div class="u-main">
+							<div class="u-plt"></div>
+							<div class="f-mgt10">
+								<a href="javascript:;" class="u-btn2 u-btn2-2"
+									data-action="login" data-type="mobile"><i>手机号登录</i></a>
+							</div>
+							<div class="f-mgt10">
+								<a href="javascript:;" class="u-btn2 u-btn2-1" data-action="reg"><i>注&#12288;册</i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
             
         <!-- load JS files -->
         <script src="${res}/js/jquery-2.0.0.js"></script> <!-- jQuery -->
@@ -214,4 +239,12 @@
         <script src="${res}/js/templatemo-script.js"></script> <!-- Templatemo scripts -->
     
     </body>
+    <script>
+	function openLogin() {
+		document.getElementById("login_info").style.display = "";
+	}
+	function closeLogin() {
+		document.getElementById("login_info").style.display = "none";
+	}
+	</script>
 </html>
