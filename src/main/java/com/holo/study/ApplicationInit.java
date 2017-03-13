@@ -10,6 +10,11 @@ import org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer;
 import com.holo.controller.InitController;
 
 import freemarker.template.Configuration;
+/**
+ * 
+ * @author holo
+ *
+ */
 public class ApplicationInit implements ApplicationListener<ContextRefreshedEvent> {
 	/**日志实例*/
 	private final Log logger = LogFactory.getLog(getClass());

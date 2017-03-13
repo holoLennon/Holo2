@@ -47,9 +47,18 @@ public class App {
     	
     }
     @RequestMapping(value="/",method=RequestMethod.GET)
-	public String index() {
+	public String login() {
     	System.err.println(12);
-    	return "/web/index2";
+    	return "/web/login";
 	}
-}
- 		
+    @RequestMapping(value="/index",method=RequestMethod.GET)
+  	public String index() {
+      	System.err.println(12);
+      	return "/web/index";
+  	}
+    @RequestMapping(value="/reg",method=RequestMethod.GET)
+  	public String reg() {
+      	System.err.println(12);
+      	return "/web/reg";
+  	}
+}	

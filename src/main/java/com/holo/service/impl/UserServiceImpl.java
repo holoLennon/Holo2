@@ -7,7 +7,11 @@ import com.holo.common.exception.HoException;
 import com.holo.service.BaseService;
 import com.holo.service.UserService;
 
-
+/**
+ * 
+ * @author holo
+ *
+ */
 @Service
 public class UserServiceImpl extends BaseService<User> implements UserService{
 	UserService userService;
